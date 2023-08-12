@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<title> 文件上传 </title>
+<link rel="shortcut icon" href="jpeg1.jpeg">
+
+<h1> 文件上传 </h1>
+<h2> <button id="home"> 主页 </button> </font> </h2>
+<input type="file" id="update" webkitdirectory>
+
+<div id="footer" style="clear:both;text-align:center;"> <font color="red"> 李宗恩© 保留所有权力。 </font> </div>
+<div id="footer" style="clear:both;text-align:center;"> <font color="red"> 2022 </font> </div>
+<div id="footer" style="clear:both;text-align:center;"> <font color="red"> <h2> 本页面已停止使用或正在开发 </h2> </font> </div>
+<div id="footer" style="clear:both;text-align:center;"> <font color="red"> <h2> 因此，声明的功能可能是无效的！ </h2> </font> </div>
+
+<script type="text/javascript">
+	const fileUploader = document.getElementById('update');
+	fileUploader.addEventListener('change',(event) => {
+		const files = event.target.files;
+		console.log('files',files);
+	});
+
+	home.onclick = function() {
+		window.location.href="../"
+	}
+</script>
