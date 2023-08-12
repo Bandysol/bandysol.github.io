@@ -2,6 +2,7 @@
 <title> 主页 </title>
 <link rel="shortcut icon" href="../photo/jpeg1.jpeg">
 <link rel="stylesheet" type="text/css" href="../JsAndCss/noCopyAndBJ.css">
+<link rel="stylesheet" type="text/css" href="../JsAndCss/Lists.css">
 
 <body
 οncοntextmenu='return false'
@@ -14,13 +15,31 @@ onbeforecopy='return false'
 
 <div id="footer" style="clear:both;text-align:center;"> <font color="red"> <h1> 主页 </h1> </font> </div>
 
-<div id="menu" style="float:left;">
+<!--<div id="menu" style="float:left;">
 	<a href="/list1.html"> <h2> <font color="red"> 文章列表 </h2> </a> </font> <br>
-	<!--<a href="/list2.html"> <h2> <font color="red"> 视频列表 </h2> </a> </font> <br>-->
+	!--<a href="/list2.html"> <h2> <font color="red"> 视频列表 </h2> </a> </font> <br>--
 	<a href="/list5.html"> <h2> <font color="red"> 音频列表 </h2> </a> </font> <br>
-	<!--<a href="/list3.html"> <h2> <font color="red"> 未完成的页面 </font> </h2> </a> <br>-->
-	<!--<a href="/list4.html"> <h2> <font color="red"> 下载列表 </font> </h2> </a> <br>-->
+	!--<a href="/list3.html"> <h2> <font color="red"> 未完成的页面 </font> </h2> </a> <br>--
+	!--<a href="/list4.html"> <h2> <font color="red"> 下载列表 </font> </h2> </a> <br>--
 	<a href="/about.html"> <h2> <font color="red"> 关于 </font> </h2> </a>
+</div>-->
+
+<div class="container">
+    <nav class="nav">
+        <input type="radio" name="nav-item-opt" id="nav-item-opt-1" checked>
+        <label class="nav-item" for="nav-item-opt-1" onclick="location.href='/list1.html';"> 文章列表 </label>
+
+        <input type="radio" name="nav-item-opt" id="nav-item-opt-2">
+        <label class="nav-item" for="nav-item-opt-2">下载</label>
+
+        <input type="radio" name="nav-item-opt" id="nav-item-opt-3">
+        <label class="nav-item" for="nav-item-opt-3" onclick="location.href='help/howtouse.html';">帮助</label>
+
+        <input type="radio" name="nav-item-opt" id="nav-item-opt-4">
+        <label class="nav-item" for="nav-item-opt-4">关于</label>
+
+        <div class="tracker"></div>
+    </nav>
 </div>
 
 <div id="content" style="float:left;">
