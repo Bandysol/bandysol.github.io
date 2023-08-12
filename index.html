@@ -32,10 +32,10 @@ onbeforecopy='return false'
 
 <div id="menu" style="float:left;">
 	<a href="/list.html"> <h2> <font color="red"> 文章列表 </h2> </a> </font> <br>
-	<a href="/list2.html"> <h2> <font color="red"> 视频列表 </h2> </a> </font> <br>
+	<!--<a href="/list2.html"> <h2> <font color="red"> 视频列表 </h2> </a> </font> <br>-->
 	<a href="/pre/pre.html"> <h2> <font color="red"> 音频列表 </h2> </a> </font> <br>
-	<a href="/list3.html"> <h2> <font color="red"> 未完成的页面 </font> </h2> </a> <br>
-	<a href="/list4.html"> <h2> <font color="red"> 下载列表 </font> </h2> </a> <br>
+	<!--<a href="/list3.html"> <h2> <font color="red"> 未完成的页面 </font> </h2> </a> <br>-->
+	<!--<a href="/list4.html"> <h2> <font color="red"> 下载列表 </font> </h2> </a> <br>-->
 </div>
 
 <div id="content" style="float:left;">
@@ -44,18 +44,4 @@ onbeforecopy='return false'
 <div id="footer" style="clear:both;text-align:center;"> <font color="red"> 李宗恩© 保留所有权力。 </font> </div>
 <div id="footer" style="clear:both;text-align:center;"> <font color="red"> 2022~2023 </font> </div>
 
-<script type="text/javascript">
-	var threshold = 160;
-	var check = setInterval(function() {
-    	if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
-        	window.location.reload();
-    	}
-	}, 1000);
-
-	window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
-    	if (event.keyCode == 123) {
-    		event.preventDefault();
-    		window.event.returnValue = false;
-    	}
-	}
-</script>
+<script src=".\donetCopy.js" />
