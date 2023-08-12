@@ -23,13 +23,21 @@ onbeforecopy='return false'
 <p> 第四步：访问你之前填的<b>xxx.github.io</b>，大功告成！ </p>
 <h3> 请注意：网页文件请自行编写，本网站<b>不提供此教程！</b> </h3>
 
-<div id="footer" style="text-align:center"> <button id="home"> 返回主页 </button> </div>
-<div id="footer" style="clear:both;text-align:center;"> <font color="red"> 李宗恩© 保留所有权力。 </font> </div>
-<div id="footer" style="clear:both;text-align:center;"> <font color="red"> 2022~2023 </font> </div>
+<div id="footer" style="text-align:center">
+	<button id="home"> 返回主页 </button>
+	<button id="list"> 返回列表 </button>
+</div>
+<div id="footer" style="clear:both;text-align:center;">
+	<font color="red"> 李宗恩© 保留所有权力。 </font>
+	<font color="red"> 2022~2023 </font>
+</div>
 
 <script type="text/javascript">
 	home.onclick = function() {
 		window.location.href="../"
+	}
+	list.onclick = function() {
+		window.location.href = "../list1.html"
 	}
 </script>
 
