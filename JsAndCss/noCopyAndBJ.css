@@ -14,3 +14,8 @@ body {
    	-ms-user-select:none;
    	user-select:none;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
