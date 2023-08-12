@@ -1,5 +1,6 @@
 body{
 	/*background: url("../photo/bj.jpeg") no-repeat center center fixed;*/
+        background-color: blue;
         -webkit-background-size: cover;
         -o-background-size: cover;                
         background-size: cover;
