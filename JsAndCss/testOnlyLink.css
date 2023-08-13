@@ -1,0 +1,65 @@
+/* 定义动画 */
+@keyframes bgAnimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+a {
+    position: relative;
+    width: 400px;
+    height: 100px;
+    line-height: 75px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    /* 背景渐变 */
+    background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 圆角 */
+    border-radius: 20px;
+    z-index: 1;
+}
+    /* 发光效果 */
+    a::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        bottom: -5px;
+        right: -5px;
+        /* 背景渐变 */
+        background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+        /* 背景渐变色大小 */
+        background-size: 400%;
+        /* 圆角 */
+        border-radius: 50px;
+        z-index: -1;
+        /* 设置模糊度 显示发光效果 */
+        filter: blur(20px);
+    }
+
+    a:hover {
+        /* 动画：名称 时间 infinite是无限次播放 */
+        animation: streamer 8s infinite;
+    }
+
+        a:hover::before {
+            /* 动画：名称 时间 infinite是无限次播放 */
+            animation: streamer 8s infinite;
+        }
+/* 定义动画 */
+@keyframes streamer {
+    100% {
+        /* 背景位置 */
+        background-position: -400% 0;
+    }
+}
