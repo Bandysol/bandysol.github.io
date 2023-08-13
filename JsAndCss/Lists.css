@@ -75,6 +75,15 @@ body {
 #nav-item-opt-4:checked ~ .tracker {
     transform: translateX(calc(var(--nav-item-width)*3));
 }
-#nav-item-opt-4:checked ~ .tracker {
+#nav-item-opt-5:checked ~ .tracker {
     transform: translateX(calc(var(--nav-item-width)*4));
+}
+#nav-item-opt-6:checked ~ .tracker {
+    transform: translateX(calc(var(--nav-item-width)*5));
+}
+#nav-item-opt-7:checked ~ .tracker {
+    transform: translateX(calc(var(--nav-item-width)*6));
+}
+#nav-item-opt-8:checked ~ .tracker {
+    transform: translateX(calc(var(--nav-item-width)*7));
 }
