@@ -1,5 +1,6 @@
 window.onload = function() {
-	setInterval("startBjMusic()",100);
+	setTimeOut(startBjMusic);
+	setInterval(startBjMusic,10000);
 }
 
 function startBjMusic() {
