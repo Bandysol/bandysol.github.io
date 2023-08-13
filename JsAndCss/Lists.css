@@ -66,13 +66,15 @@ body {
     transition: transform .3s ease-in-out;
 }
 
-#nav-item-opt-2:checked~.tracker {
+#nav-item-opt-2:checked ~ .tracker {
     transform: translateX(calc(var(--nav-item-width)));
 }
-
-#nav-item-opt-3:checked~.tracker {
+#nav-item-opt-3:checked ~ .tracker {
     transform: translateX(calc(var(--nav-item-width)*2));
 }
 #nav-item-opt-4:checked ~ .tracker {
     transform: translateX(calc(var(--nav-item-width)*3));
+}
+#nav-item-opt-4:checked ~ .tracker {
+    transform: translateX(calc(var(--nav-item-width)*4));
 }
