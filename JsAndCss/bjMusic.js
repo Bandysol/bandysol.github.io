@@ -1,8 +1,3 @@
-window.onload = function() {
-	setTimeOut(startBjMusic);
-	setInterval(startBjMusic,10000);
-}
-
 function startBjMusic() {
 	var music = document.getElementById('bjMusic');
 	if (music.paused) {
