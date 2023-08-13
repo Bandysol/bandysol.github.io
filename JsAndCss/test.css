@@ -171,3 +171,17 @@ a:hover::before {
     border-radius: 20px;
     z-index: 1;
 }
+
+.gua-1 {
+    font-size: 13px;
+    height: 17px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-size: 400%;
+    border-radius: 20px;
+    z-index: 1;
+}
