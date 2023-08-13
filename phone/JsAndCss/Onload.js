@@ -1,7 +1,7 @@
 window.onload = function() {
 	var isp = IsPhone();
 	if (!isp) {
-		window.location.href= window.location.pathname.substring(5);
+		window.location.href = "../";
 	}
 	setTimeOut(startBjMusic);
 	setInterval(startBjMusic,10000);
