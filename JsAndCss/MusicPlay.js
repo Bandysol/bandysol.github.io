@@ -22,7 +22,7 @@ loop.onclick = function() {
 	}
 }
 
-more.onclick = function() {
+/*more.onclick = function() {
 	var moredou = document.getElementById("morediv");
 	if (!moreopen) {
 		more.innerHTML = "<div class=\"gua0\"> 收起 </div>";
@@ -34,7 +34,7 @@ more.onclick = function() {
 		//download.innerHTML = "";
 		moreopen = false;
 	}
-}
+}*/
 
 var moreopen = false;
 
@@ -51,12 +51,18 @@ function checkNameAndNB(url) {
 	var namedou = document.getElementById("name");
 	namedou.innerHTML = Names[index];
 	if (index > 0) {
-		back.innerHTML = "上一首";
-		back.href = "./play.html?" + Lists[index-1];
+		var back = document.getElementById("back");
+		back.innerHTML = "<button class=\"blue button\" onclick=" + ("\"location.href='" + "./play.html?" + Lists[index-1] + "';\">") + " 上一首  </button>";
+	} else {
+		var back = document.getElementById("backb");
+		back.disabled = true;
 	}
 	if (index < (Lists.length - 1)) {
-		next.innerHTML = "下一首";
-		next.href = "./play.html?" + Lists[index+1];
+		var next = document.getElementById("next");
+		next.innerHTML = "<button class=\"blue button\" onclick=" + ("\"location.href='" + "./play.html?" + Lists[index+1] + "';\">") + " 下一首  </button>";
+	} else {
+		var next = document.getElementById("nextb");
+		next.disabled = true;
 	}
 	musicplay.src = FirstString + Lists[index];
 	musicplay.load();
