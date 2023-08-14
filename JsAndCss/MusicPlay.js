@@ -53,13 +53,13 @@ function checkNameAndNB(url) {
 	if (index > 0) {
 		BackButtonLink = "./play.html?" + Lists[index-1];
 	} else {
-		var back = document.getElementById("backb");
+		var back = document.getElementById("back");
 		back.disabled = true;
 	}
 	if (index < (Lists.length - 1)) {
 		NextButtonLink = "./play.html?" + Lists[index+1];
 	} else {
-		var next = document.getElementById("nextb");
+		var next = document.getElementById("next");
 		next.disabled = true;
 	}
 	musicplay.src = FirstString + Lists[index];
