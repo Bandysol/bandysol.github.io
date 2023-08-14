@@ -3,12 +3,13 @@ window.onload = function() {
 	if (isp) {
 		window.location.href="phone"+window.location.pathname+window.location.search;
 	} else {
-		var musicname = window.location.search.substring(1);
+		var musicname = decodeURI(window.location.search.substring(1));
 		if (!(musicname == "bj.mp3")) {
-			musicplay.src = "./"+musicname;
-			musicplay.load();
-			var namedou = document.getElementById("name");
-			namedou.innerHTML = decodeURI(musicname).replace(".mp3","");
+			//musicplay.src = "./"+musicname;
+			//musicplay.load();
+			//var namedou = document.getElementById("name");
+			//namedou.innerHTML = decodeURI(musicname).replace(".mp3","");
+			checkNameAndNB(musicname);
 		} else {
 			window.location.href="../list2.html";
 		}
@@ -39,11 +40,28 @@ more.onclick = function() {
 	}
 }
 
-function scanPlayDo() {
-	if (musiclongstr == "") {
-		musiclongstr = Math.trunc(musicplay.duration / 60) + ":" + Math.trunc(musicplay.duration % 60);
-		var nowlongstr = Math.trunc(musicplay.currentTime / 60) + ":" + Math.trunc(musicplay.currentTime % 60);
-	}
-}
-
 var moreopen = false;
+
+function checkNameAndNB(url) {
+	var index = null;
+	for (var i = 0;i < Lists.length;++i) {
+		if (Lists[i] == url) {
+			index = i;
+		}
+	}
+	if (index == null) {
+		return false;
+	}
+	var namedou = document.getElementById("name");
+	namedou.innerHTML = Names[index];
+	if (index > 0) {
+		back.innerHTML = "上一首";
+		back.href = "./play.html?" + Lists[index-1];
+	}
+	if (index < (Lists.length - 1)) {
+		next.innerHTML = "下一首";
+		next.href = "./play.html?" + Lists[index+1];
+	}
+	musicplay.src = FirstString + Lists[index];
+	musicplay.load();
+}
