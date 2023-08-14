@@ -8,6 +8,17 @@ window.onload = function() {
 	CheckNextAndBack(window.location.pathname.replace("/blog/",""));
 }
 
+var NextJump = "";
+var BackJump = "";
+
+next.onclick = function() {
+	location.href = NextJump;
+}
+
+back.onclick = function() {
+	location.href = BackJump;
+}
+
 function CheckNextAndBack(name) {
 	var index = null;
 	for (var i = 0;i < Lists.length;++i) {
@@ -16,14 +27,16 @@ function CheckNextAndBack(name) {
 		}
 	}
 	if (index == null) {
-		throw new Exception("URL出错");
+		return;
 	}
 	if (index > 0) {
-		back.innerHTML = "上一篇";
-		back.href = "./" + Lists[index-1];
+		BackJump = "./" + Lists[index-1];
+	} else {
+		back.disabled = true;
 	}
 	if (index < (Lists.length - 1)) {
-		next.innerHTML = "下一篇";
-		next.href = "./" + Lists[index+1];
+		NextJump = "./" + Lists[index+1];
+	} else {
+		next.disabled = true;
 	}
 }

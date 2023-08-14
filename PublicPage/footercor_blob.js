@@ -1,6 +1,8 @@
-document.writeln("<div id=\"footer\" style=\"text-align:center\">");
-document.writeln("	<a id=\"back\"></a>");
-document.writeln("	<a href=\"../\"> 返回主页 </a>");
-document.writeln("	<a href=\"../list1.html\"> 返回列表 </a>");
-document.writeln("	<a id=\"next\"></a> <br>");
+document.writeln("<div align=\"center\">");
+document.writeln("<li class=\"button-group\">");
+document.writeln("	<button class=\"large blue button\" id=\"back\"> 上一篇 </button>");
+document.writeln("	<button class=\"large blue button\" onclick=\"location.href='./';\"> 返回主页 </button>");
+document.writeln("	<button class=\"large blue button\" onclick=\"location.href='./list1.html';\"> 返回列表 </button>");
+document.writeln("	<button class=\"large blue button\" id=\"next\"> 下一篇 </button>");
+document.writeln("</li>");
 document.writeln("</div>");
