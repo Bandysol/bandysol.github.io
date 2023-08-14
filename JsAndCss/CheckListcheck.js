@@ -1,5 +1,5 @@
 function CheckIDCheck() {
-	const headstr = "nav-item-opt-";
+	const headstr = "button-select-";
 	var end = null;
 	var pathname = window.location.pathname;
 	if (pathname == "/" || pathname == "/index.html") {
@@ -10,5 +10,5 @@ function CheckIDCheck() {
 		end = headstr + (parseInt(pathname.replace("/list","").replace(".html","")) + 1);
 	}
 	var headle = document.getElementById(end);
-	headle.checked = true;
+	headle.disabled = true;
 }

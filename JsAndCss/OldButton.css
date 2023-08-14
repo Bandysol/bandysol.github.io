@@ -1,0 +1,14 @@
+button {
+    font-family: 楷体;
+    position: relative;
+    height: auto;
+    width: auto;
+    line-height: auto;
+    letter-spacing: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: auto;
+    /* 圆角 */
+    border-radius: 13px;
+    z-index: 1;
+}
