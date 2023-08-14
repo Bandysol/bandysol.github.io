@@ -51,19 +51,28 @@ function checkNameAndNB(url) {
 	var namedou = document.getElementById("name");
 	namedou.innerHTML = Names[index];
 	if (index > 0) {
-		var back = document.getElementById("back");
-		back.innerHTML = "<button class=\"blue button\" onclick=" + ("\"location.href='" + "./play.html?" + Lists[index-1] + "';\">") + " 上一首  </button>";
+		BackButtonLink = "./play.html?" + Lists[index-1];
 	} else {
 		var back = document.getElementById("backb");
 		back.disabled = true;
 	}
 	if (index < (Lists.length - 1)) {
-		var next = document.getElementById("next");
-		next.innerHTML = "<button class=\"blue button\" onclick=" + ("\"location.href='" + "./play.html?" + Lists[index+1] + "';\">") + " 下一首  </button>";
+		NextButtonLink = "./play.html?" + Lists[index+1];
 	} else {
 		var next = document.getElementById("nextb");
 		next.disabled = true;
 	}
 	musicplay.src = FirstString + Lists[index];
 	musicplay.load();
+}
+
+var BackButtonLink = "";
+var NextButtonLink = "";
+
+next.onclick = function() {
+	location.href = NextButtonLink;
+}
+
+back.onclick = function() {
+	location.href = BackButtonLink;
 }
