@@ -1,0 +1,23 @@
+document.writeln("");
+document.writeln("<div class=\"container\" style=\"position: fixed;z-index: 999;top: 0;\">");
+document.writeln("    <nav class=\"nav\">");
+document.writeln("    	<input type=\"radio\" name=\"nav-item-opt\" id=\"nav-item-opt-1\">");
+document.writeln("    	<label class=\"nav-item\" for=\"nav-item-opt-1\" onclick=\"location.href=\'../\';\"> 主页 </label>");
+document.writeln("");
+document.writeln("        <input type=\"radio\" name=\"nav-item-opt\" id=\"nav-item-opt-2\">");
+document.writeln("        <label class=\"nav-item\" for=\"nav-item-opt-2\" onclick=\"location.href=\'/list1.html\';\"> 文章列表 </label>");
+document.writeln("");
+document.writeln("        <input type=\"radio\" name=\"nav-item-opt\" id=\"nav-item-opt-3\">");
+document.writeln("        <label class=\"nav-item\" for=\"nav-item-opt-3\" onclick=\"location.href=\'/list2.html\';\"> 音频列表 </label>");
+document.writeln("");
+document.writeln("        <input type=\"radio\" name=\"nav-item-opt\" id=\"nav-item-opt-4\">");
+document.writeln("        <label class=\"nav-item\" for=\"nav-item-opt-4\" onclick=\"location.href=\'/list3.html\';\"> 项目列表 </label>");
+document.writeln("");
+document.writeln("        <input type=\"radio\" name=\"nav-item-opt\" id=\"nav-item-opt-5\">");
+document.writeln("        <label class=\"nav-item\" for=\"nav-item-opt-5\" onclick=\"location.href=\'/about.html\';\"> 关于 </label>");
+document.writeln("        ");
+document.writeln("        <div class=\"tracker\"></div>");
+document.writeln("    </nav>");
+document.writeln("</div>");
+
+CheckIDCheck();

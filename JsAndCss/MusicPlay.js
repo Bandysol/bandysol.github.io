@@ -5,10 +5,6 @@ window.onload = function() {
 	} else {
 		var musicname = decodeURI(window.location.search.substring(1));
 		if (!(musicname == "bj.mp3")) {
-			//musicplay.src = "./"+musicname;
-			//musicplay.load();
-			//var namedou = document.getElementById("name");
-			//namedou.innerHTML = decodeURI(musicname).replace(".mp3","");
 			checkNameAndNB(musicname);
 		} else {
 			window.location.href="../list2.html";

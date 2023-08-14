@@ -44,6 +44,7 @@ buttonbody {
 }
 
 a {
+    font-family: 楷体;
     position: relative;
     height: 100px;
     line-height: 47px;
