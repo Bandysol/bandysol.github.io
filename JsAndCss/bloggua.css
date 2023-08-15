@@ -1,7 +1,6 @@
 .gua1 {
     font-family: 楷体;
     font-size: 25px;
-    height: 47px;
     position: relative;
     text-decoration: none;
     line-height: 37px;
@@ -16,7 +15,6 @@
     font-family: 楷体;
     font-weight: bold;
     font-size: 37px;
-    height: 42px;
     position: relative;
     text-decoration: none;
     line-height: 42px;
@@ -30,7 +28,6 @@
 .gua0 {
     font-family: 楷体;
     font-size: 25px;
-    height: 37px;
     position: relative;
     text-decoration: none;
     line-height: 37px;
@@ -43,8 +40,20 @@
 
 .gua-1 {
     font-family: 楷体;
+    font-size: 17px;
+    position: relative;
+    text-decoration: none;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-size: 400%;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.gua-2 {
+    font-family: 楷体;
     font-size: 13px;
-    height: 17px;
     position: relative;
     text-decoration: none;
     line-height: 17px;
