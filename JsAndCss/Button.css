@@ -194,7 +194,7 @@
   padding: 7px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
-  border-radius: 7px;
+  /*border-radius: 14px;*/
 }
 
 .button-group li{
@@ -205,7 +205,7 @@
   font-size: 13px; /* Set the font size, different from inherited 0 */
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0;
+  border-radius: 23px;
 }
 
 .button-group .button:active{
