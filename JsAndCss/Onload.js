@@ -5,4 +5,5 @@ window.onload = function() {
 	}
 	setTimeout(startBjMusic);
 	setInterval(startBjMusic,10000);
+	ButtonWorking();
 }

@@ -185,7 +185,7 @@
   zoom: 1;
 }
 
-.button-group{
+.button-group {
   font-size: 0; /* Inline block elements gap - fix */
   margin: 0;
   padding: 0;
@@ -205,7 +205,7 @@
   font-size: 13px; /* Set the font size, different from inherited 0 */
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 23px;
+  /*border-radius: 23px;*/
 }
 
 .button-group .button:active{
@@ -217,7 +217,7 @@
 .button-group li:first-child .button{
   -moz-border-radius: 3px 0 0 3px;
   -webkit-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+  border-radius: 23px 0 0 23px;
 }
 
 .button-group li:first-child .button:active{
@@ -229,7 +229,7 @@
 .button-group li:last-child .button{
   -moz-border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 23px 23px 0;
 }
 
 .button-group li:last-child .button:active{
