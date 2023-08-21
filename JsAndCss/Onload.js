@@ -16,21 +16,15 @@ function checkAndJuumpPhone(hasBjMusic,IsMusicPlay) {
 		} else {
 			window.location.href="../list2.html";
 		}
-		for (;;) {
-			try {
-				var	tmp = document.getElementById("musicplay");
-				tmp.play();
-				break;
-			} catch(ex) {}
-		}
+		var	tmp = document.getElementById("musicplay");
+		tmp.play();
 	}
 	if (hasBjMusic) {
-		for (;;) {
-			try {
-				startBjMusic();
-				break;
-			} catch(ex) {}
-		}
+		startBjMusic();
+	}
+	if (IsMusicPlay) {
+		var tmp = document.getElementById("musicplay");
+		tmp.play();
 	}
 	ButtonWorking();
 }
