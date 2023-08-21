@@ -50,17 +50,24 @@ function checkNameAndNB(url) {
 	}
 	musicplay.src = FirstString + Lists[index];
 	musicplay.load();
-	//var playthis = document.getElementById("musicplay");
-//	playthis.play();
+
+
+	next.onclick = function() {
+		location.href = NextButtonLink;
+	}
+
+	back.onclick = function() {
+		location.href = BackButtonLink;
+	}
 }
 
 var BackButtonLink = "";
 var NextButtonLink = "";
 
-next.onclick = function() {
+/*next.onclick = function() {
 	location.href = NextButtonLink;
 }
 
 back.onclick = function() {
 	location.href = BackButtonLink;
-}
+}*/
