@@ -50,24 +50,7 @@ function checkNameAndNB(url) {
 	}
 	musicplay.src = FirstString + Lists[index];
 	musicplay.load();
-
-
-	next.onclick = function() {
-		location.href = NextButtonLink;
-	}
-
-	back.onclick = function() {
-		location.href = BackButtonLink;
-	}
 }
 
 var BackButtonLink = "";
 var NextButtonLink = "";
-
-/*next.onclick = function() {
-	location.href = NextButtonLink;
-}
-
-back.onclick = function() {
-	location.href = BackButtonLink;
-}*/
