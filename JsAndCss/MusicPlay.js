@@ -50,7 +50,8 @@ function checkNameAndNB(url) {
 	}
 	musicplay.src = FirstString + Lists[index];
 	musicplay.load();
-	musicplay.play();
+	var playthis = document.getElementById("musicplay");
+	playthis.play();
 }
 
 var BackButtonLink = "";
