@@ -13,14 +13,24 @@ function checkAndJuumpPhone(hasBjMusic,IsMusicPlay) {
 		var musicname = decodeURI(window.location.search.replace("?",""));
 		if (!(musicname == "bj.mp3")) {
 			checkNameAndNB(musicname);
-			var tmp = document.getElementById("musicplay");
-			tmp.play();
 		} else {
 			window.location.href="../list2.html";
 		}
+		for (;;) {
+			try {
+				var	tmp = document.getElementById("musicplay");
+				tmp.play();
+				break;
+			} catch(ex) {}
+		}
 	}
 	if (hasBjMusic) {
-		startBjMusic();
+		for (;;) {
+			try {
+				startBjMusic();
+				break;
+			} catch(ex) {}
+		}
 	}
 	ButtonWorking();
 }
