@@ -1,17 +1,3 @@
-window.onload = function() {
-	var isp = IsPhone();
-	if (isp) {
-		window.location.href="phone"+window.location.pathname+window.location.search;
-	} else {
-		var musicname = decodeURI(window.location.search.substring(1));
-		if (!(musicname == "bj.mp3")) {
-			checkNameAndNB(musicname);
-		} else {
-			window.location.href="../list2.html";
-		}
-	}
-}
-
 loop.onclick = function() {
 	if (musicplay.loop) {
 		musicplay.loop = false;
@@ -64,6 +50,7 @@ function checkNameAndNB(url) {
 	}
 	musicplay.src = FirstString + Lists[index];
 	musicplay.load();
+	musicplay.play();
 }
 
 var BackButtonLink = "";
