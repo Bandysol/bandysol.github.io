@@ -6,7 +6,9 @@ var Lists = [
 	"我和我的祖国.mp3",
 	"枫原万叶.mp3",
 	"Clock Paradox.mp3",
-	"WATER.mp3"
+	"WATER.mp3",
+	"第4套广播体操(bj).mp3",
+	"跑操音乐.mp3"
 ];
 
 var Names = [
@@ -17,7 +19,9 @@ var Names = [
 	"我和我的祖国",
 	"枫原万叶",
 	"Clock Paradox",
-	"Water"
+	"Water",
+	"第4套广播体操",
+	"跑操音乐"
 ];
 
-var FirstString = "./";
+var FirstString = "/music/";
