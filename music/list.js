@@ -8,7 +8,8 @@ var Lists = [
 	"Clock Paradox.mp3",
 	"WATER.mp3",
 	"第4套广播体操(bj).mp3",
-	"跑操音乐.mp3"
+	"跑操音乐.mp3",
+	"我用什么把你留住.mp3"
 ];
 
 var Names = [
@@ -21,7 +22,8 @@ var Names = [
 	"Clock Paradox",
 	"Water",
 	"第4套广播体操",
-	"跑操音乐"
+	"跑操音乐",
+	"我用什么把你留住"
 ];
 
 var FirstString = "/music/";
