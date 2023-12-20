@@ -1,5 +1,5 @@
 .gua1 {
-    font-family: 楷体;
+    font-family: STXihei,楷体;
     font-size: 25px;
     height: 47px;
     position: relative;
@@ -14,7 +14,7 @@
 }
 
 .gua2 {
-    font-family: 楷体;
+    font-family: STXihei,楷体;
     font-weight: bold;
     font-size: 37px;
     height: 42px;
@@ -30,7 +30,7 @@
 }
 
 .gua0 {
-    font-family: 楷体;
+    font-family: STXihei,楷体;
     font-size: 25px;
     height: 37px;
     position: relative;
@@ -45,7 +45,7 @@
 }
 
 .gua-1 {
-    font-family: 楷体;
+    font-family: STXihei,楷体;
     font-size: 13px;
     height: 17px;
     position: relative;
